@@ -10,7 +10,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../resources/css/common/Common.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.navbar_Wrapper {
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+
+}
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+.user_info_display_sectionWrapper {
+    margin-left: 50px;
+}
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;}
+.MainLogo_Wrapper>div i {font-size: 2rem;}
+.menu_bar {margin-right: 50px;}
+.menu_bar>table tr td a {color: white}
+.user_inter_font {font-size: 0.7rem;}
+.menu_bar table tr td {padding-left: 10px;}
+    
+    </style>
 <title>Insert title here</title>
 </head>
 <body>

@@ -11,7 +11,5 @@
 <body>
   <%@ include file="views/common/commonNavbar.jsp" %>
   
-  
-  
 </body>
 </html>
