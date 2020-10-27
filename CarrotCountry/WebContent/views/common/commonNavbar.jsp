@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<%
+String contextPath = request.getContextPath();
+%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,46 +22,41 @@
     vertical-align: baseline;
     box-sizing: border-box;
 }
-a {
-    text-decoration: none;
-}
+a {text-decoration: none;}
 .navbar_Wrapper {
     background-color: orange;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
+    }
 .navbar_sizeWraper_1200px {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1200px;
     height: 100%;
-
-}
+    }
 .navbar_sizeWraper_1200px div {
     display: flex;
     justify-content: center;
-
-}
+	}
 .user_info_display_sectionWrapper {
     margin-left: 50px;
-}
+	}
 .user_info_display_sectionWrapper div {
     display: flex;
     align-items: center;
-}
+	}
 .MainLogo_Wrapper {
     display: flex;
-    align-items: center;}
+    align-items: center;
+    }
 .MainLogo_Wrapper>div i {font-size: 2rem;}
-.menu_bar {margin-right: 50px;}
+.menu_bar 				{margin-right: 50px;}
 .menu_bar>table tr td a {color: white}
-.user_inter_font {font-size: 0.7rem;}
-.menu_bar table tr td {padding-left: 10px;}
-    
+.user_inter_font 		{font-size: 0.7rem;}
+.menu_bar table tr td   {padding-left: 10px;}
     </style>
 <title>Insert title here</title>
 </head>
@@ -72,7 +69,7 @@ a {
             </div>
             <div class=MainLogo_Wrapper>
                 <div><a href=""><i class="fas fa-carrot"></i></a></div>
-                <div><a href="">당근나라</a></div>
+                <div><a href="<%=contextPath%>">당근나라</a></div>
             </div>
             <div class="menu_bar">
                 <table>
