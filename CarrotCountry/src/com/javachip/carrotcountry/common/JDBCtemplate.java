@@ -1,11 +1,14 @@
 package com.javachip.carrotcountry.common;
 
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.InvalidPropertiesFormatException;
 import java.util.Properties;
 
@@ -36,8 +39,80 @@ public class JDBCtemplate {
 			e.printStackTrace();
 		}
 		
-		
-		
 		return conn;
+	}
+	
+public static void commit(Connection conn) {
+		
+		try {
+			if(!conn.isClosed()||conn!=null) {
+				
+				conn.commit();
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void rollback(Connection conn) {
+		
+		try {
+			if(!conn.isClosed()||conn!=null) {
+				
+				conn.rollback();
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void close(Connection conn) {
+		try {
+			if(!conn.isClosed()||conn!=null) {
+				
+				conn.close();
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void close(Statement stmt) {
+		
+		try {
+			if(!stmt.isClosed()||stmt!=null) {
+				
+				stmt.close();
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
+	}
+	
+	public static void close(ResultSet rs) {
+		
+		try {
+			if(!rs.isClosed()||rs!=null) {
+				
+				rs.close();
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 }
