@@ -18,13 +18,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="../Common/images/20190220_205501.jpg" alt="First slide" >
+                <img class="d-block w-100" src="" alt="First slide" >
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="../Common/images/20190221_213457.jpg" alt="Second slide">
+                <img class="d-block w-100" src="" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="../Common/images/20190221_213450.jpg" alt="Third slide">
+                <img class="d-block w-100" src="" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -40,13 +40,13 @@
           <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="../Common/images/20190220_205501.jpg" alt="First slide" >
+                <img class="d-block w-100" src="" alt="First slide" >
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="../Common/images/20190221_213457.jpg" alt="Second slide">
+                <img class="d-block w-100" src="" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="../Common/images/20190220_194753.jpg" alt="Third slide">
+                <img class="d-block w-100" src="" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
@@ -65,7 +65,15 @@
     <!-- =============================== 중고게시판 공동구매 게시판 버튼  ======================= -->
 
     <div class="board_button_wrapper">
-    <button type="button" class="btn btn-outline-warning">동네마켓</button>
+    <button type="button" class="btn btn-outline-warning" id="townMarket_button">동네마켓</button>
+    <script>
+    let town_btn = document.getElementById("townMarket_button");
+    town_btn.addEventListener('click',toTown);
+    
+    function toTown(){
+    	location.href="<%=contextPath%>/shMarket.sh"
+    }
+    </script>
     <button type="button" class="btn btn-outline-success">공구마켓</button>
     </div>
     
@@ -79,7 +87,7 @@
     <div id="top8_board_wrapper" style="border:1px solid red; margin-bottom:100px;">
         <div class="top8_board_floor">
           <div href="" class="product_display_wrapper">
-             <div class="img_wraper"><img src="../Common/images/20190220_194751.jpg" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
+             <div class="img_wraper"><img src="" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
              <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
              <div class="location_area">서울시 송파구</div>
              <div class="ratring_counter">
@@ -87,37 +95,11 @@
              </div>
              <div class="price_display">30000</div>
             </div>
-          <div href="" class="product_display_wrapper">
-             <div class="img_wraper"><img src="../Common/images/20190220_194751.jpg" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
-             <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
-             <div class="location_area">서울시 송파구</div>
-             <div class="ratring_counter">
-                 <p>조회수:xx 찜:xx</p>
-             </div>
-             <div class="price_display">30000</div>
-            </div>
-            <div href="" class="product_display_wrapper">
-             <div class="img_wraper"><img src="../Common/images/20190220_194751.jpg" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
-             <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
-             <div class="location_area">서울시 송파구</div>
-             <div class="ratring_counter">
-                 <p>조회수:xx 찜:xx</p>
-             </div>
-             <div class="price_display">30000</div>
-            </div>
-               <div href="" class="product_display_wrapper">
-                <div class="img_wraper"><img src="../Common/images/KakaoTalk_20201015_022259571_01.png" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
-                <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
-                <div class="location_area">서울시 XXX</div>
-                <div class="ratring_counter">
-                    <p>조회수:xx 찜:xx</p>
-                </div>
-                <div class="price_display">30000</div>
-               </div>
+       
         </div>
         <div class="top8_board_floor">
                 <div href="" class="product_display_wrapper">
-             <div class="img_wraper"><img src="../Common/images/20190220_194751.jpg" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
+             <div class="img_wraper"><img src="" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
              <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
              <div class="location_area">서울시 송파구</div>
              <div class="ratring_counter">
@@ -125,33 +107,6 @@
              </div>
              <div class="price_display">30000</div>
             </div>
-          <div href="" class="product_display_wrapper">
-             <div class="img_wraper"><img src="../Common/images/20190220_194751.jpg" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
-             <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
-             <div class="location_area">서울시 송파구</div>
-             <div class="ratring_counter">
-                 <p>조회수:xx 찜:xx</p>
-             </div>
-             <div class="price_display">30000</div>
-            </div>
-            <div href="" class="product_display_wrapper">
-             <div class="img_wraper"><img src="../Common/images/20190220_194751.jpg" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
-             <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
-             <div class="location_area">서울시 송파구</div>
-             <div class="ratring_counter">
-                 <p>조회수:xx 찜:xx</p>
-             </div>
-             <div class="price_display">30000</div>
-            </div>
-               <div href="" class="product_display_wrapper">
-                <div class="img_wraper"><img src="../Common/images/KakaoTalk_20201015_022259571_01.png" alt="" style="width:100%; height:100%; border-radius: 10px;" ></div>
-                <div class="product_title"><h5 class="popular_board_title">제목</h5></div>
-                <div class="location_area">서울시 XXX</div>
-                <div class="ratring_counter">
-                    <p>조회수:xx 찜:xx</p>
-                </div>
-                <div class="price_display">30000</div>
-               </div>
         </div>
         <a href=""><div class="bottom_font" align="center">매물 더 보기</div></a>  
 </div>
