@@ -89,21 +89,12 @@
     <div id="mainArticle_wrapper">
 
         <div class="mainArticle_sidebar">
-            <a href="">
+            <div>
                 <div class="side_bar font">
                     XXXX
                 </div>
-            </a>
-            <a href="">
-                <div class="side_bar font">
-                    XXXX
-                </div>
-            </a>
-            <a href="">
-                <div class="side_bar font">
-                    XXXX
-                </div>
-            </a>
+            </div>
+       
         </div>
 
         <div class="mainArticle_article">

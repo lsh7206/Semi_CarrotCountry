@@ -57,7 +57,7 @@
          
     </div>
     <div class="outer">
-        <i type="button" 
+        <i  
         class="fas fa-exclamation-triangle" 
         data-toggle="modal" 
         data-target="#myModal"
@@ -101,7 +101,7 @@
 
      <!-- ↓ 유저 정보및 가격 ↓ -->
      <div class="userInfo_display">
-         <a class="left_section" 
+         <div class="left_section" 
             style="width:30%; 
             height:80%;display: flex; 
             align-content: center;">
@@ -110,7 +110,7 @@
                 <h4 style="margin-bottom: 0px; margin-top: 5px;">판매자XX</h4>
                 <p style="margin-top: 0px;">주소XXX</p>
              </div>
-         </a>
+         </div>
          <div class="right_price" 
               style="font-size: 1.5rem; 
               font-weight: bold;">가격:15000</div>
@@ -182,7 +182,7 @@
                     <p style="font-size: 0.4rem; 
                               margin:3px 0px 0px 0px;
                               font-weight: bold;"> 비공개</p>
-                    <input type="checkbox" name="comment_condition" style="margin-left: 10px;" valie="Y">
+                    <input type="checkbox" name="comment_condition" style="margin-left: 10px;" value="Y">
                     </div>
          </form>
 

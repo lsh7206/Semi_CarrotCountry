@@ -44,7 +44,7 @@ public class JDBCtemplate {
 public static void commit(Connection conn) {
 		
 		try {
-			if(!conn.isClosed()||conn!=null) {
+			if(!conn.isClosed()&&conn!=null) {
 				
 				conn.commit();
 				
@@ -59,7 +59,7 @@ public static void commit(Connection conn) {
 	public static void rollback(Connection conn) {
 		
 		try {
-			if(!conn.isClosed()||conn!=null) {
+			if(!conn.isClosed()&&conn!=null) {
 				
 				conn.rollback();
 				
@@ -73,7 +73,7 @@ public static void commit(Connection conn) {
 	
 	public static void close(Connection conn) {
 		try {
-			if(!conn.isClosed()||conn!=null) {
+			if(!conn.isClosed()&&conn!=null) {
 				
 				conn.close();
 				
@@ -88,7 +88,7 @@ public static void commit(Connection conn) {
 	public static void close(Statement stmt) {
 		
 		try {
-			if(!stmt.isClosed()||stmt!=null) {
+			if(!stmt.isClosed()&&stmt!=null) {
 				
 				stmt.close();
 				
@@ -103,7 +103,7 @@ public static void commit(Connection conn) {
 	public static void close(ResultSet rs) {
 		
 		try {
-			if(!rs.isClosed()||rs!=null) {
+			if(!rs.isClosed()&&rs!=null) {
 				
 				rs.close();
 				
