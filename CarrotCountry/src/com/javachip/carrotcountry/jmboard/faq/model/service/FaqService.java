@@ -26,6 +26,17 @@ public class FaqService {
 		return list;
 	}
 
+	public int insertFaq(Faq f) {
+		
+		Connection conn = getConnection();
+		
+		int result = new FaqDao().insertFaq(conn,f);
+		
+		close(conn);
+		
+		return result;
+	}
+
 
 	
 	

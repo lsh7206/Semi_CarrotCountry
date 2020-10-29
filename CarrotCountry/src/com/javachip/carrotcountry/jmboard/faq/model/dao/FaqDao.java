@@ -71,6 +71,11 @@ public class FaqDao {
 		
 		return list;
 	}
+
+	public int insertFaq(Connection conn, Faq f) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	
